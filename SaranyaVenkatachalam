@@ -1,0 +1,22 @@
+import java.util.*;
+public class main
+{
+public static void main(String[] args)
+{
+Scanner scan =new Scanner(System.in);
+String str=scan.nextLine();
+String x=str.substring(str.length()/2,str.length());
+String y=str.substring(0,str.length()/2);
+String z=x+y;
+//System.out.println(z);
+for(int i=0;i<str.length();i++)
+{
+for(int j=str.length()-1;j>=0;j--)
+{
+if(j>i)
+System.out.print(" ");
+}
+System.out.println(z.substring(0,i+1));
+}
+}
+}
